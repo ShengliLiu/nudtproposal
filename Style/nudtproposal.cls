@@ -100,7 +100,7 @@
     \thispagestyle{empty}%
 \hbox{}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
 %% underline
-\renewcommand{\CJKunderlinecolor}{\color[rgb]{0,0,0}}
+\newcommand{\CJKunderlinecolor}{\color[rgb]{0,0,0}}
 \def\NUDT@underline[#1]#2{%
     \CJKunderline{\hbox to #1{\hfill#2\hfill}}}
 \def\NUDTunderline{\@ifnextchar[\NUDT@underline\CJKunderline}
@@ -114,11 +114,11 @@
 	%%%% Using Office Family Fonts
 	\setCJKmainfont{KaiTi}
 	\setCJKsansfont{SimHei} % Hei
-	\setCJKmonofont{FangSong_GB2312} % Fangsong
+	\setCJKmonofont{FangSong} % Fangsong
 	%%%% alias
 	\setCJKfamilyfont{song}{SimSun}
 	\setCJKfamilyfont{hei}{SimHei}
-	\setCJKfamilyfont{fs}{FangSong_GB2312} % fang-song
+	\setCJKfamilyfont{fs}{FangSong} % fang-song
 	\setCJKfamilyfont{kai}{KaiTi} % Kai
 	\setCJKfamilyfont{times}{Times New Roman} % times
 }
